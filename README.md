@@ -25,6 +25,7 @@ Setup:
 ```
 npm install 
 npm audit fix
+hoge
 ```
 
 Tests:

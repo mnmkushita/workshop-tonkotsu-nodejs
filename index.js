@@ -1,3 +1,4 @@
+var var = var;
 const server = require("server");
 const chalk = require("chalk");
 const ora = require("ora");

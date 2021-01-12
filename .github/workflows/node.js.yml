@@ -25,3 +25,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'github-session1-webapp-jbs'
+        slot-name: 'Staging'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cc8d230be2384cf3bb3eb2af4bce4af5 }}
+        package: .

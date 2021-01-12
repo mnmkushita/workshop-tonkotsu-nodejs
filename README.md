@@ -24,6 +24,7 @@ Setup:
 
 ```
 npm install 
+npm audit fix
 ```
 
 Tests:
